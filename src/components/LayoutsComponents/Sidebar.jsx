@@ -1,10 +1,5 @@
 import { Image, Layout, Menu, } from 'antd';
 import { Link } from 'react-router-dom';
-import { TbPresentationAnalytics } from "react-icons/tb";
-import { HiOutlineVideoCamera } from "react-icons/hi2";
-import { PiVideoThin } from "react-icons/pi";
-import { LiaMoneyCheckAltSolid } from "react-icons/lia";
-import { PiUsersLight } from "react-icons/pi";
 const { Sider } = Layout;
 import logo from '../../../public/logo.png'
 // eslint-disable-next-line react/prop-types
@@ -66,7 +61,7 @@ const Sidebar = ({ collapsed }) => {
                             icon: <svg width="9" height="11" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.49125 0.438516C0.125 0.804766 0.125 1.39352 0.125 2.57227V8.19727C0.125 9.37602 0.125 9.96477 0.49125 10.331C0.8575 10.6973 1.44625 10.6973 2.625 10.6973H6.375C7.55375 10.6973 8.1425 10.6973 8.50875 10.331C8.875 9.96477 8.875 9.37602 8.875 8.19727V2.57227C8.875 1.39352 8.875 0.804766 8.50875 0.438516C8.1425 0.0722656 7.55375 0.0722656 6.375 0.0722656H2.625C1.44625 0.0722656 0.8575 0.0722656 0.49125 0.438516ZM2.625 2.57227C2.45924 2.57227 2.30027 2.63811 2.18306 2.75532C2.06585 2.87253 2 3.03151 2 3.19727C2 3.36303 2.06585 3.522 2.18306 3.63921C2.30027 3.75642 2.45924 3.82227 2.625 3.82227H6.375C6.54076 3.82227 6.69973 3.75642 6.81694 3.63921C6.93415 3.522 7 3.36303 7 3.19727C7 3.03151 6.93415 2.87253 6.81694 2.75532C6.69973 2.63811 6.54076 2.57227 6.375 2.57227H2.625ZM2.625 5.07227C2.45924 5.07227 2.30027 5.13811 2.18306 5.25532C2.06585 5.37253 2 5.53151 2 5.69727C2 5.86303 2.06585 6.022 2.18306 6.13921C2.30027 6.25642 2.45924 6.32227 2.625 6.32227H6.375C6.54076 6.32227 6.69973 6.25642 6.81694 6.13921C6.93415 6.022 7 5.86303 7 5.69727C7 5.53151 6.93415 5.37253 6.81694 5.25532C6.69973 5.13811 6.54076 5.07227 6.375 5.07227H2.625ZM2.625 7.57227C2.45924 7.57227 2.30027 7.63811 2.18306 7.75532C2.06585 7.87253 2 8.03151 2 8.19727C2 8.36303 2.06585 8.522 2.18306 8.63921C2.30027 8.75642 2.45924 8.82227 2.625 8.82227H5.125C5.29076 8.82227 5.44973 8.75642 5.56694 8.63921C5.68415 8.522 5.75 8.36303 5.75 8.19727C5.75 8.03151 5.68415 7.87253 5.56694 7.75532C5.44973 7.63811 5.29076 7.57227 5.125 7.57227H2.625Z" fill="white" fill-opacity="0.8"/>
                             </svg>,
-                            label: <Link to={`booking-management`}>Booking Management</Link>,
+                            label: <Link to={`/bookingmanagement`}>Booking Management</Link>,
                         },
                         {
                             key: '6',
@@ -75,7 +70,7 @@ const Sidebar = ({ collapsed }) => {
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.57227V12.0723C0 12.9007 0.671573 13.5723 1.5 13.5723L13.5 13.5723C14.3284 13.5723 15 12.9007 15 12.0723V6.57227H0ZM2 10.5723H8V9.57227H2V10.5723ZM13 10.5723H10V9.57227H13V10.5723Z" fill="white" fill-opacity="0.8"/>
                             </svg>
                             ,
-                            label: <Link to={`user-management`}>Transactions</Link>,
+                            label: <Link to={`/transactions`}>Transactions</Link>,
                         },
                         {
                             key: '7',
@@ -84,7 +79,7 @@ const Sidebar = ({ collapsed }) => {
                             <path d="M11 0.572266L11 2.62227C9.85888 2.85391 9 3.86279 9 5.07227C9 6.28174 9.85888 7.29062 11 7.52226V15.5723H12V7.52226C13.1411 7.29062 14 6.28174 14 5.07227C14 3.86279 13.1411 2.85391 12 2.62227L12 0.572266H11Z" fill="white" fill-opacity="0.8"/>
                             </svg>
                             ,
-                            label: <Link to={`user-management`}>Settings</Link>,
+                            label: <Link to={`/seetings`}>Settings</Link>,
                         },
                     ]}
                 />
